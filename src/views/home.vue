@@ -4,8 +4,20 @@
     <router-link to="vuex"><el-button>go To vuex.vue</el-button></router-link>
 </template>
 
-<script>
+<script lang="ts">
+    import axios from '../utils/axios'
     export default {
+        setup() {
+            axios
+                .get('/users/XPoet')
+                .then((res) => {
+                    console.log('🚀 ~ file: home.vue ~ line 14 ~ setup ~ res', res)
+                })
+
+                .catch((err) => {
+                    console.log('🚀 ~ file: home.vue ~ line 18 ~ setup ~ err', err)
+                })
+        },
         mounted() {
             console.log('🚀 ~ file: home.vue ~ line 8 ~ mounted ~ mounted')
         }
