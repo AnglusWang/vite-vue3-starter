@@ -5,26 +5,26 @@
 </template>
 
 <script lang="ts">
-    import axios from '../utils/axios'
-    export default {
-        setup() {
-            axios
-                .get('/users/XPoet')
-                .then((res) => {
-                    console.log('🚀 ~ file: home.vue ~ line 14 ~ setup ~ res', res)
-                })
+import axios from "../utils/axios";
+export default {
+    setup() {
+        axios
+            .get("/users/XPoet")
+            .then((res) => {
+                console.log("🚀 ~ file: home.vue ~ line 14 ~ setup ~ res", res);
+            })
 
-                .catch((err) => {
-                    console.log('🚀 ~ file: home.vue ~ line 18 ~ setup ~ err', err)
-                })
-        },
-        mounted() {
-            console.log('🚀 ~ file: home.vue ~ line 8 ~ mounted ~ mounted')
-        }
-    }
+            .catch((err) => {
+                console.log("🚀 ~ file: home.vue ~ line 18 ~ setup ~ err", err);
+            });
+    },
+    mounted() {
+        console.log("🚀 ~ file: home.vue ~ line 8 ~ mounted ~ mounted");
+    },
+};
 </script>
 
 <style lang="stylus" scoped>
-    .title
-        color: #686
+.title
+    color: #686
 </style>
