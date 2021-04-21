@@ -1,5 +1,5 @@
 <template>
-    <h1>home.vue</h1>
+    <h1 class="title">home.vue</h1>
     <router-link to="axios"><el-button>go To axios.vue</el-button></router-link>
     <router-link to="vuex"><el-button>go To vuex.vue</el-button></router-link>
 </template>
@@ -24,4 +24,7 @@
     }
 </script>
 
-<style></style>
+<style lang="stylus" scoped>
+    .title
+        color: #686
+</style>
