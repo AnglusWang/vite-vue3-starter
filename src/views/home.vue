@@ -6,6 +6,7 @@
 
 <script lang="ts">
 import axios from '../utils/axios'
+
 export default {
     setup() {
         axios
